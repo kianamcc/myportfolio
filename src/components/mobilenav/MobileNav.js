@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import "./MobileNav.css";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
-import Navbar from "../navbar/Navbar";
 import { Link } from "react-scroll";
 
 const MobileNav = () => {
