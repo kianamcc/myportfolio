@@ -55,6 +55,15 @@
   );
 }
 
+.main-projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+
+}
+
 html,
 body,
 #root,
@@ -104,6 +113,17 @@ Desktops
   }
 } */
 
+/* Tablets */
+@media (max-width: 768px) {
+  .main-projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
 /* Mobile devices */
 @media (max-width: 480px) {
   .section-paragraph {
@@ -119,6 +139,7 @@ Desktops
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 }
 
