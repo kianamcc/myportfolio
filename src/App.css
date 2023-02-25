@@ -73,6 +73,10 @@ body,
   margin: 0;
 }
 
+html {
+  padding: env(safe-area-inset);
+}
+
 h1,
 h2,
 h3,
@@ -115,13 +119,7 @@ Desktops
 
 /* Tablets */
 @media (max-width: 768px) {
-  .main-projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-  }
 }
 
 /* Mobile devices */
