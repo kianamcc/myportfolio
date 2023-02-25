@@ -1,0 +1,27 @@
+.footer-container {
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.github-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.arrow {
+    cursor: pointer;
+    color: #ffff;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

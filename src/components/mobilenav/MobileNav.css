@@ -1,0 +1,79 @@
+.mobile-nav {
+  color: #ffff;
+  width: 100%;
+  display: none;
+}
+
+/* Hamburger Menu */
+@media screen and (max-width: 990px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-nav-links {
+    position: absolute;
+    list-style-type: none;
+    color: #ffff;
+    cursor: pointer;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .mobile-nav-item a:hover {
+    transition: all 200ms ease-out;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ffff;
+  }
+
+  .mobile-nav-links li a.active {
+    transition: all 200ms ease-out;
+    padding-bottom: 5px;
+  }
+
+  .mobile-nav-resume {
+    border: 2px solid #ffff;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 300ms linear;
+  }
+
+  .mobile-nav-resume:hover {
+    background-color: #56cfe1;
+  }
+}
+
+.mobile-nav-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.menu-icon:hover {
+    transition: 200ms linear;
+
+  color: #56cfe1;
+}

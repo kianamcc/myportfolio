@@ -1,38 +1,117 @@
 .App {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  counter-reset: section-count;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.section-title {
   text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-title::before {
+  counter-increment: section-count;
+  content: "0" counter(section-count) ".";
+  margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.section-title::after {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+
+
+.section-paragraph {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.section-paragraph::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.projects-section {
+  padding-top: 100px;
+}
+
+.bkg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(19, 5, 65, 1) 42%,
+    rgba(25, 133, 172, 1) 100%,
+    rgba(61, 11, 80, 1) 100%
+  );
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .section-paragraph {
+    font-size: 1rem;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .section-paragraph {
+    font-size: 1.2rem;
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Laptops */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-paragraph {
+    font-size: 1rem;
+  } 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 
+Desktops
+@media (max-width: 1200px) {
+  .section-paragraph {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
