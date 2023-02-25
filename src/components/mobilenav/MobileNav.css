@@ -62,9 +62,10 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
+
   height: 80px;
   width: 100%;
+
 }
 
 .menu-icon {

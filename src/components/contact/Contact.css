@@ -7,4 +7,53 @@
     height: 60vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+}
+
+.name-input-box, .email-input-box {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.submit-btn {
+    width: fit-content;
+    border: 2px solid #56cfe1;
+    color: #ffff;
+    border-radius: 2px;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.message-input-box  {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    height: 200px;
+    font-weight: 600;
+    resize: none;
+    font-family: inherit;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+  }
+  

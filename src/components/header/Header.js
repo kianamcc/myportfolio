@@ -12,7 +12,13 @@ const Header = () => {
           I like creating things on the web, just like this one right here!
         </p>
         <button className="connect-btn">
-          <Link to="contact" spy={true} smooth={true} duration={500}>
+          <Link
+            to="contact"
+            className="connect"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             Let's connect
           </Link>
         </button>

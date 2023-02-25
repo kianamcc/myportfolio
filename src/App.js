@@ -28,14 +28,16 @@ const App = () => {
       <div className="bkg">
         <Header />
         <About />
-        <h2
-          className="section-title projects-section"
-          id="projects"
-          style={{ color: "white" }}
-        >
-          Featured Projects
-        </h2>
-        {projects}
+        <div className="main-projects-container">
+          <h2
+            className="section-title projects-section"
+            id="projects"
+            style={{ color: "white" }}
+          >
+            Featured Projects
+          </h2>
+          {projects}
+        </div>
         <Contact />
         <Footer arrowHandler={arrowHandler} />
       </div>
