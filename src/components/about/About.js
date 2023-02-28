@@ -29,7 +29,7 @@ const About = () => {
             </p>
             <p className="section-paragraph">
               When I'm not coding, I like to draw digital art, play video games,
-              and spend time with my cat.
+              and spend time with my cat, Kohaku.
             </p>
           </div>
           <div className="technology-container">
@@ -61,6 +61,10 @@ const About = () => {
               <div className="technology-item">
                 <SiPostgresql className="icon" />
                 <div>PostgreSQL</div>
+              </div>
+              <div className="technology-item">
+                <SiPostgresql className="icon" />
+                <div>Python</div>
               </div>
               <div className="technology-item">
                 <FaGitAlt className="icon" />

@@ -5,12 +5,12 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <header className="header" id="header">
-      <div className="header-container">
+      <section className="header-container">
         <h1 className="intro">Hi, I'm Kiana McCullough</h1>
         <h3 className="headline">Web Developer & Web Enthusiast</h3>
-        <p className="intro-description">
-          I like creating things on the web, just like this one right here!
-        </p>
+        <h4 className="intro-description">
+          I like creating things on the web, just like this website right here!
+        </h4>
         <button className="connect-btn">
           <Link
             to="contact"
@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
         </button>
         <div className="header-links"></div>
-      </div>
+      </section>
     </header>
   );
 };

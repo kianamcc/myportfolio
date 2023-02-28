@@ -16,7 +16,6 @@ const Projects = (props) => {
   return (
     <section className="projects">
       <div className="projects-container">
-        {/* <h2 className="section-title">Featured Projects</h2> */}
         <div className="projects-flex-container">
           <div className="projects-container-left">
             <h3 className="project-title">{props.project.projectName}</h3>
@@ -28,8 +27,22 @@ const Projects = (props) => {
               {projectTechologiesDisplay}
             </div>
             <div className="project-links">
-              <AiFillGithub size={40} className="project-github" />
-              <IoMdOpen size={40} className="project-code" />
+              <a
+                href={props.project.githubLink}
+                className="githubLink"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub size={40} className="project-github" />
+              </a>
+              <a
+                href={props.project.liveDemoLink}
+                className="githubLink"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoMdOpen size={40} className="project-code" />
+              </a>
             </div>
           </div>
           <div className="projects-container-right">
