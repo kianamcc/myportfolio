@@ -25,14 +25,20 @@ const Navbar = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-100}
               duration={500}
             >
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="projects" spy={true} smooth={true} duration={500}>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              // offset={-100}
+              duration={500}
+            >
               Projects
             </Link>
           </li>

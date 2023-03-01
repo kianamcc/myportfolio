@@ -17,7 +17,6 @@ const App = () => {
   };
 
   const projects = projectData.map((project) => {
-    // console.log(projectData);
     return <Projects project={project} key={project.id} />;
   });
 
@@ -29,14 +28,13 @@ const App = () => {
         <Header />
         <About />
 
-        <h2
-          className="section-title projects-section"
-          id="projects"
-          style={{ color: "white" }}
-        >
-          Featured Projects
-        </h2>
-        {projects}
+        <section className="project-main" id="projects">
+          <h2 className="section-title" style={{ color: "white" }}>
+            Featured Projects
+          </h2>
+          {projects}
+        </section>
+
         <Contact />
         <Footer arrowHandler={arrowHandler} />
       </div>

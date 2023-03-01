@@ -10,12 +10,26 @@ const Contact = () => {
           Feel free to reach out to me and I will be in touch with you shortly!
         </p>
         <form action="submit" className="contact-form">
-          <input type="text" placeholder="Name" className="name-input-box" />
-          <input type="email" placeholder="Email" className="email-input-box" />
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            className="name-input-box"
+            id="name"
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="email-input-box"
+            id="email"
+          />
+          <label htmlFor="message">Message</label>
           <textarea
             type="text"
-            placeholder="Message"
+            placeholder="Enter a message"
             className="message-input-box"
+            id="message"
           />
           <button className="submit-btn">Submit</button>
         </form>

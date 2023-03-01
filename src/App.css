@@ -1,7 +1,11 @@
 .App {
   box-sizing: border-box;
   counter-reset: section-count;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+section {
+  padding: 0px 0px 100px 0px;
 }
 
 .icon {
@@ -9,14 +13,15 @@
   width: 50px;
 }
 
-
-.section-title, .contact-title {
+.section-title,
+.contact-title {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.section-title::before, .contact-title::before {
+.section-title::before,
+.contact-title::before {
   counter-increment: section-count;
   content: "0" counter(section-count) ".";
   margin-right: 5px;
@@ -36,13 +41,8 @@
   width: 10px;
 }
 
-
-
-.projects-section {
-  padding-top: 100px;
-}
-
 .bkg {
+  /* background-color: rgba(0, 0, 0, 0.2); */
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 25%,
@@ -50,15 +50,6 @@
     rgba(25, 133, 172, 1) 100%,
     rgba(61, 11, 80, 1) 100%
   );
-}
-
-.main-projects-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-
 }
 
 html,
@@ -78,28 +69,37 @@ h1,
 h2,
 h3,
 h4,
-p, ul, li {
+p,
+ul,
+li {
   padding: 0;
   margin: 0;
 }
 
+.p-main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+
+.p-inner {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+}
 
 /* Laptops */
 @media (max-width: 1024px) {
-  .section-title, .contact-title {
+  .section-title,
+  .contact-title {
     font-size: 2rem;
   }
-  .section-paragraph {
-    font-size: 1rem;
-  } 
 }
-
 
 /* Tablets */
 /* @media (max-width: 768px) {
-  .section-paragraph {
-    font-size: 1.2rem;
-  }
+
   .icon {
     height: 40px;
     width: 40px;
@@ -109,10 +109,14 @@ p, ul, li {
 /* 
 Desktops
 @media (max-width: 1200px) {
-  .section-paragraph {
-    font-size: 1rem;
-  }
+
 } */
+
+@media only screen and (max-width: 960px) {
+  .project-main {
+    padding: 0px;
+  }
+}
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -120,16 +124,11 @@ Desktops
     height: 30px;
     width: 30px;
   }
-
 }
 
 /* Mobile devices */
 @media (max-width: 480px) {
-  .section-paragraph {
-    font-size: 1rem;
-  }
-
-.section-title::after {
+  .section-title::after {
     content: "";
     display: block;
     height: 50px;
@@ -141,12 +140,11 @@ Desktops
     width: 30px;
   }
 
-  .main-projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  section {
+    padding: 0px 0px 70px 0px;
+  }
 
+  .project-main {
+    padding: 0px;
   }
 }
-

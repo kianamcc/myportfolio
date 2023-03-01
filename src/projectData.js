@@ -6,7 +6,7 @@ const projectData = [
     projectName: "U4Ea",
     src: sammy,
     projectDescription:
-      "U4Ea is a website made for the U4Ea mobile application. Made using React and HTML/CSS, it introduces users with information and scientific links to the healing power of sound through binaural beats.",
+      "A website made and designed to introduce and promote the mobile application: U4Ea. Provides an interactive interface that introduces users to the healing power of sound through binaural beats.",
     projectTechnologies: ["React", "CSS", "Node.js", "Express.js", "MySQL"],
     githubLink: "http://github.com/U4EaData/Landing-Page",
     liveDemoLink: "http://u4ea.onrender.com/",
@@ -16,7 +16,7 @@ const projectData = [
     projectName: "CatFinder",
     src: sammy,
     projectDescription:
-      "CatFinder is a web application that gives users access to over 1k+ cats in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers. CatFinder allows users to favorite cats to their local storage so they can view their cats of interest at anytime and update it as well as needed.",
+      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
     projectTechnologies: ["React", "CSS"],
     githubLink: "test",
     liveDemoLink: "test2",
@@ -26,7 +26,7 @@ const projectData = [
     projectName: "Subscraper",
     src: sammy,
     projectDescription:
-      "Subscraper is a web application that scrapes any subreddit of choice, saving the results as a JSON object and creating a RESTful JSON API with the data. It has been deployed using Render.com.",
+      "Subscraper is a web application that scrapes any subreddit of choice, saving the results as a JSON object and creating a RESTful JSON API with the data.",
     projectTechnologies: [
       "React",
       "CSS",
