@@ -24,7 +24,7 @@ const MobileNav = () => {
           to="about"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-100}
           duration={500}
           onClick={() => setOpen((prev) => !prev)}
         >
@@ -36,7 +36,7 @@ const MobileNav = () => {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-200}
+          offset={-100}
           duration={500}
           onClick={() => setOpen((prev) => !prev)}
         >
@@ -48,6 +48,7 @@ const MobileNav = () => {
           to="contact"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={500}
           onClick={() => setOpen((prev) => !prev)}
         >
