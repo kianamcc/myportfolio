@@ -18,6 +18,11 @@
     margin-left: 30px;
 }
 
+.logo-img {
+    width: 60px;
+    height: 40px;
+}
+
 .nav-links {
     display: flex;
     justify-content: flex-end;
@@ -58,17 +63,22 @@
 }
 
 .nav-resume {
-    border: 2px solid #FFFF;
+    border: 2px solid #56cfe1;
     padding: 10px;
     border-radius: 2px;
     cursor: pointer;
     transition: all 300ms linear;
+    text-decoration: none;
+    background: none;
+    background-color: none;
+    color: white;
 }
 
 .nav-resume:hover {
     background-color: #56cfe1;
 }
 
-/* breakpoints
-@media (max-width: 480px) 
-*/
+.resume-link {
+    text-decoration: none;
+    color: white;
+}

@@ -13,12 +13,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50vw;
+  width: 45vw;
 }
 
 .contact-description {
   text-align: center;
   padding: 0px 0px 10px 0px;
+  width: 50%;
+  line-height: 2rem;
 }
 
 .name-input-box,
@@ -39,6 +41,11 @@
   cursor: pointer;
   margin-left: auto;
   font-size: 1.2rem;
+  transition: all 300ms linear;
+}
+
+.submit-btn:hover {
+  background-color: #56cfe1;
 }
 
 .message-input-box {
@@ -56,6 +63,9 @@
   .contact-form {
     width: 60vw;
   }
+  .contact-description {
+    width: 80%;
+  }
 }
 
 /* Mobile devices */
@@ -71,12 +81,23 @@
     padding: 10px;
     justify-content: center;
   }
+
+  .contact-description {
+    width: 80%;
+  }
 }
 
 @media (max-width: 320px) {
   .contact-form {
     gap: 10px;
     width: 250px;
+  }
+
+  .contact-description {
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    width: 90%;
+    font-size: 0.9rem;
   }
 
 }

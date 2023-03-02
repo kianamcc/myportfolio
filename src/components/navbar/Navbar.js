@@ -1,12 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import resume from "../../assets/KianaMcCulloughResume.pdf";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav-container">
-        <div className="header-logo">Kiana</div>
+        <div className="header-logo">
+          <img className="logo-img" src={logo} alt="" />
+        </div>
         <ul className="nav-links">
           <li className="nav-item">
             <Link
@@ -36,18 +40,35 @@ const Navbar = () => {
               to="projects"
               spy={true}
               smooth={true}
-              // offset={-100}
+              offset={-100}
               duration={500}
             >
               Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="contact" spy={true} smooth={true} duration={500}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
-          <li className="nav-resume">Resume</li>
+          <li>
+            <div className="nav-resume">
+              <a
+                className="resume-link"
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>

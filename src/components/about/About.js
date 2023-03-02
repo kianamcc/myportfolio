@@ -23,9 +23,10 @@ const About = () => {
             <p className="section-paragraph">
               I consider myself a mixture of university-taught and self-taught.
               I obtained my bachelor's degree in Computer Science from the
-              University of California, Riverside and acquired technical skills
-              from online courses on Udemy where I found my passion for web
-              development. Everyday I continue to learn and improve.
+              University of California, Riverside and acquired many other
+              technical skills from online courses on Udemy where I found my
+              passion for web development. Everyday I continue to learn and
+              improve.
             </p>
             <p className="section-paragraph">
               I am currently a web developer intern at The Verse where I
@@ -39,39 +40,39 @@ const About = () => {
           </div>
           <div className="technology-container">
             <div className="technology-grid-container">
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiReact className="icon" />
                 <p className="technology-text">React</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiJavascript className="icon" />
                 <p className="technology-text">JavaScript</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiHtml5 className="icon" />
                 <p className="technology-text">HTML</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiCss3 className="icon" />
                 <p className="technology-text">CSS</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <FaNodeJs className="icon" />
                 <p className="technology-text">Node.js</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiExpress className="icon" />
                 <p className="technology-text">Express.js</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiPostgresql className="icon" />
                 <p className="technology-text">PostgreSQL</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <SiPostgresql className="icon" />
                 <p className="technology-text">Python</p>
               </div>
-              <div className="technology-item-about">
+              <div className="technology-item">
                 <FaGitAlt className="icon" />
                 <p className="technology-text">Git</p>
               </div>

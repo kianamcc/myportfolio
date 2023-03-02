@@ -18,6 +18,7 @@ section {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
+  padding: 10px 0px 0px 0px;
 }
 
 .section-title::before,
@@ -114,7 +115,7 @@ Desktops
 
 @media only screen and (max-width: 960px) {
   .project-main {
-    padding: 0px;
+    /* padding: 0px; */
   }
 }
 
@@ -145,6 +146,14 @@ Desktops
   }
 
   .project-main {
-    padding: 0px;
+    /* padding: 0px; */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 320px) {
+  .section-title::after {
+    height: 40px;
+    width: 40px;
   }
 }

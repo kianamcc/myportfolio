@@ -17,7 +17,7 @@
 
 .about-text {
   flex: 1;
-  padding: 10px;
+  padding: 0px 10px;
   line-height: 2rem;
 }
 
@@ -38,12 +38,6 @@
   padding: 10px;
 }
 
-.technology-item-about {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
-  text-align: center;
-}
-
 .technology-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, auto));
@@ -52,10 +46,13 @@
 }
 
 .technology-item {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 10px 4px;
 }
 
 /* Laptops */
@@ -111,7 +108,7 @@
 }       
 @media only screen and (max-width: 320px) {
   .about-text {
-    padding: 10px;
+    padding: 0px 10px;
   }
 
   .technology-grid-container {
@@ -119,11 +116,10 @@
     grid-gap: 20px;
   }
   .technology-container {
-    width: 50%;
+    width: 70%;
   }
 
   .technology-text {
-    font-size: 0.7rem;
-    
+    font-size: 0.5rem;
   }
 }

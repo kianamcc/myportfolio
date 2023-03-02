@@ -51,9 +51,9 @@
   z-index: 1;
 }
 
-.connect-btn:hover, .connect-btn:focus {
+/* .connect-btn:hover, .connect-btn:focus {
   color: #FFFF;
-}
+} */
 
 .intro {
   font-size: 4rem;
