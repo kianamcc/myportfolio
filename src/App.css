@@ -77,19 +77,6 @@ li {
   margin: 0;
 }
 
-.p-main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  color: white;
-}
-
-.p-inner {
-  margin: auto;
-  width: 90%;
-  height: 100vh;
-}
-
 /* Laptops */
 @media (max-width: 1024px) {
   .section-title,
@@ -114,9 +101,7 @@ Desktops
 } */
 
 @media only screen and (max-width: 960px) {
-  .project-main {
-    /* padding: 0px; */
-  }
+
 }
 
 /* Tablets */
@@ -145,9 +130,7 @@ Desktops
     padding: 0px 0px 70px 0px;
   }
 
-  .project-main {
-    /* padding: 0px; */
-  }
+
 }
 
 /* Mobile devices */

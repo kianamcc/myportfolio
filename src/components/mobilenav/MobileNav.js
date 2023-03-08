@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./MobileNav.css";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
 import { Link } from "react-scroll";
+import resume from "../../assets/KianaMcCulloughResume.pdf";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(true);
@@ -55,7 +56,16 @@ const MobileNav = () => {
           Contact
         </Link>
       </li>
-      <li className="mobile-nav-resume">Resume</li>
+      <li className="mobile-nav-resume">
+        <a
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
+          className="mobile-nav-resume-link"
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   );
   return (

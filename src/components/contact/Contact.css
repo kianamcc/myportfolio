@@ -58,13 +58,30 @@
   font-family: inherit;
 }
 
+.form-submit-msg {
+  font-weight: 600;
+  animation: form-submit-anim 200ms ease-in-out;
+}
+
+@keyframes form-submit-anim {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 /* Tablets */
 @media (max-width: 768px) {
   .contact-form {
     width: 60vw;
   }
   .contact-description {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -83,7 +100,8 @@
   }
 
   .contact-description {
-    width: 80%;
+    width: 90%;
+    padding-bottom: 40px;
   }
 }
 

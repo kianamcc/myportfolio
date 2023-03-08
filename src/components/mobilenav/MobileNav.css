@@ -2,6 +2,7 @@
   color: #ffff;
   width: 100%;
   display: none;
+  
 }
 
 /* Hamburger Menu */
@@ -66,7 +67,6 @@
   align-items: center;
   height: 80px;
   width: 100%;
-
 }
 
 .menu-icon {
@@ -75,7 +75,11 @@
 }
 
 .menu-icon:hover {
-    transition: 200ms linear;
-
+  transition: 200ms linear;
   color: #56cfe1;
+}
+
+.mobile-nav-resume-link {
+  text-decoration: none;
+  color: white;
 }

@@ -18,7 +18,7 @@ const Footer = (props) => {
         </div>
         <div className="footnote">Kiana McCullough ©2023</div>
         <div className="arrow-container" onClick={props.arrowHandler}>
-          <AiOutlineUpCircle size={40} className="arrow" />
+          <AiOutlineUpCircle size={50} className="arrow" />
         </div>
       </div>
     </footer>

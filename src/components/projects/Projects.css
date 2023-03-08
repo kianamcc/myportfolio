@@ -14,15 +14,19 @@
   line-height: 2rem;
 }
 
+.projects-container {
+  padding: 0px 100px 50px 100px;
+}
+
 .projects-flex-container {
   display: flex;
   gap: 35px;
-  padding: 0px 100px 50px 100px;
+  /* padding: 0px 100px 50px 100px; */
   flex-wrap: wrap;
   animation: projectAnimation 500ms ease-in;
 }
 
-@keyframes projectAnimation {
+/* @keyframes projectAnimation {
   0% {
     opacity: 0;
   }
@@ -32,7 +36,7 @@
   100% {
     opacity: 100;
   }
-}
+} */
 
 .projects-container-left {
   flex: 1;
