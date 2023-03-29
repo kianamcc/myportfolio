@@ -1,6 +1,7 @@
 import catfinderimg from "./assets/catfinder.png";
 import u4eaimg from "./assets/u4ea.png";
 import subscraperimg from "./assets/subscraper.png";
+import portfolioimg from "./assets/portfolio.png";
 
 const projectData = [
   {
@@ -48,6 +49,15 @@ const projectData = [
     ],
     githubLink: "http://github.com/kianamcc/subscraper",
     liveDemoLink: "http://subscraper.onrender.com/",
+  },
+  {
+    id: 3,
+    projectName: "Portfolio Website",
+    src: portfolioimg,
+    projectDescription: "This website right here!",
+    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
+    githubLink: "http://github.com/kianamcc/myportfolio",
+    liveDemoLink: "http://kianamccu.netlify.app/",
   },
 ];
 

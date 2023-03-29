@@ -30,7 +30,7 @@ const App = () => {
 
         <section className="project-main" id="projects">
           <h2 className="section-title" style={{ color: "white" }}>
-            Featured Projects
+            Projects
           </h2>
           {projects}
         </section>

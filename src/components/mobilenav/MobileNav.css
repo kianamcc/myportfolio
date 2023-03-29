@@ -41,6 +41,7 @@
   }
 
   .mobile-nav-item a:hover {
+    cursor: pointer;
     transition: all 200ms ease-out;
     padding-bottom: 5px;
     border-bottom: 3px solid #ffff;
