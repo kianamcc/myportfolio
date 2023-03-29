@@ -74,11 +74,23 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  
+}
+
+.technology-item {
+  padding: 8px;
 }
 
 .project-github,
 .project-code {
   cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.project-github:hover,
+.project-code:hover {
+  transition: all 150ms linear;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Laptops */

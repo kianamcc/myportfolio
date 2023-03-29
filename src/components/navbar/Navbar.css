@@ -10,11 +10,10 @@
     position: fixed;
     height: 80px;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .header-logo {
-    cursor: pointer;
     color: #FFFF;
     margin-left: 30px;
 }

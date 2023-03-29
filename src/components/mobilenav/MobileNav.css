@@ -2,7 +2,7 @@
   color: #ffff;
   width: 100%;
   display: none;
-  
+
 }
 
 /* Hamburger Menu */
@@ -13,11 +13,15 @@
 
   .mobile-nav {
     display: flex;
+    position: absolute;
+    z-index: 2000;
   }
 
   .mobile-nav-container {
     position: fixed;
   }
+
+  
 
   .mobile-nav-links {
     position: absolute;
