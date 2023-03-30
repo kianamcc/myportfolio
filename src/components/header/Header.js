@@ -17,6 +17,7 @@ const Header = () => {
             className="connect"
             spy={true}
             smooth={true}
+            offset={-100}
             duration={500}
           >
             Let's connect

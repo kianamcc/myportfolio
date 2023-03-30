@@ -19,7 +19,6 @@ const Navbar = () => {
               smooth={true}
               offset={-50}
               duration={500}
-              onClick={() => console.log("clicked")}
             >
               Home
             </Link>
