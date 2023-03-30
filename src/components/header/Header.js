@@ -11,18 +11,16 @@ const Header = () => {
         <h4 className="intro-description">
           I like creating things on the web, just like this website right here!
         </h4>
-        <button className="connect-btn">
-          <Link
-            to="contact"
-            className="connect"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Let's connect
-          </Link>
-        </button>
+        <Link
+          to="contact"
+          className="connect-btn"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          Let's connect
+        </Link>
         <div className="header-links"></div>
       </section>
     </header>

@@ -28,6 +28,13 @@
   font-size: 1.2rem;
 }
 
+.connect {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
 .connect-btn::before {
   content: '';
   position: absolute;
