@@ -55,6 +55,10 @@
   padding: 10px 4px;
 }
 
+.icon:hover {
+  color: #56cfe1;
+}
+
 /* Laptops */
 @media (max-width: 1024px) {
 
