@@ -21,17 +21,18 @@ const About = () => {
               Hello, I'm Kiana. Nice to meet you.
             </p>
             <p className="section-paragraph">
+              I'm currently a web developer at a startup company, The Verse,
+              where I continue to hone my web development skills and work in
+              collaboration with like-minded people.
+            </p>
+            <p className="section-paragraph">
               I obtained my bachelor's degree in Computer Science from the
               University of California, Riverside and acquired many other
               technical skills from online courses on Udemy where I found my
               passion for web development. Everyday I continue to learn and
               improve.
             </p>
-            <p className="section-paragraph">
-              I'm currently a web developer intern at The Verse where I continue
-              to hone my web development skills and where I am connected with
-              other like-minded people.
-            </p>
+
             <p className="section-paragraph">
               When I'm not coding, I like to draw digital art, play video games,
               and spend time with my cat, Kohaku.
