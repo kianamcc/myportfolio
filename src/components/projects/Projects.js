@@ -30,14 +30,16 @@ const Projects = (props) => {
                 {projectTechologiesDisplay}
               </div>
               <div className="project-links">
-                <a
-                  href={props.project.githubLink}
-                  className="githubLink"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillGithub size={40} className="project-github" />
-                </a>
+                {props.project.githubLink && (
+                  <a
+                    href={props.project.githubLink}
+                    className="githubLink"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiFillGithub size={40} className="project-github" />
+                  </a>
+                )}
                 <a
                   href={props.project.liveDemoLink}
                   className="githubLink"

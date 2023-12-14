@@ -1,11 +1,38 @@
 import catfinderimg from "./assets/catfinder.png";
 import u4eaimg from "./assets/u4ea.png";
-import subscraperimg from "./assets/subscraper.png";
-import portfolioimg from "./assets/portfolio.png";
+import janeimg from "./assets/jane.png";
 
 const projectData = [
   {
     id: 0,
+    projectName: "Jane Component Library",
+    src: janeimg,
+    projectDescription:
+      "A React-based reusable component library integrated with Storybook to maintain design consistency across our company website. By leveraging robust third-party libraries, we implemented these components to streamline the development process while ensuring a cohesive and standardized design throughout the website.",
+    projectTechnologies: [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Radix UI",
+      "Storybook",
+      "Styled Components",
+      "AWS Amplify",
+    ],
+    liveDemoLink:
+      "https://component-library.janedev.com/?path=/docs/components-badge--docs",
+  },
+  {
+    id: 2,
+    projectName: "CatFinder",
+    src: catfinderimg,
+    projectDescription:
+      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
+    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
+    githubLink: "http://github.com/kianamcc/catfinder",
+    liveDemoLink: "http://catfinder-adopt.netlify.app/",
+  },
+  {
+    id: 1,
     projectName: "U4Ea",
     src: u4eaimg,
     projectDescription:
@@ -21,43 +48,6 @@ const projectData = [
     ],
     githubLink: "http://github.com/U4EaData/Landing-Page",
     liveDemoLink: "http://u4ea.onrender.com/",
-  },
-  {
-    id: 1,
-    projectName: "CatFinder",
-    src: catfinderimg,
-    projectDescription:
-      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
-    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
-    githubLink: "http://github.com/kianamcc/catfinder",
-    liveDemoLink: "http://catfinder-adopt.netlify.app/",
-  },
-  {
-    id: 2,
-    projectName: "Subscraper",
-    src: subscraperimg,
-    projectDescription:
-      "Subscraper is a web application that scrapes any subreddit of choice, saving the results as a JSON object and creating a RESTful JSON API with the data.",
-    projectTechnologies: [
-      "React",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Express.js",
-      "Cheerio.js",
-    ],
-    githubLink: "http://github.com/kianamcc/subscraper",
-    liveDemoLink: "http://subscraper.onrender.com/",
-  },
-  {
-    id: 3,
-    projectName: "Portfolio Website",
-    src: portfolioimg,
-    projectDescription: "This website right here!",
-    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
-    githubLink: "http://github.com/kianamcc/myportfolio",
-    liveDemoLink: "http://kianamccu.netlify.app/",
   },
 ];
 
