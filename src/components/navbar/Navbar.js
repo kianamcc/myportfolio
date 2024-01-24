@@ -1,7 +1,6 @@
 // import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import resume from "../../assets/KianaMcCulloughResume.pdf";
 import logo from "../../assets/logo.png";
 
 import * as React from "react";
