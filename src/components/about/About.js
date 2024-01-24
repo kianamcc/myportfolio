@@ -12,69 +12,63 @@ import { FaNodeJs, FaGitAlt } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="about" id="about">
+    <section className="about" id="About">
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <div className="about-flex-container">
           <div className="about-text">
             <p className="section-paragraph">
-              Hello, I'm Kiana. Nice to meet you.
+              Hi there! I'm Kiana McCullough, a Web Developer with a focus on
+              front-end development based in California.
             </p>
             <p className="section-paragraph">
-              I'm currently a web developer at a startup company, The Verse,
-              where I continue to hone my web development skills and work in
-              collaboration with like-minded people.
+              I firmly believe that the path to success lies in continual
+              learning. I'm dedicated to refining my skills and exploring new
+              horizons in both web and software development.
             </p>
             <p className="section-paragraph">
-              I obtained my bachelor's degree in Computer Science from the
-              University of California, Riverside and acquired many other
-              technical skills from online courses on Udemy where I found my
-              passion for web development. Everyday I continue to learn and
-              improve.
-            </p>
-
-            <p className="section-paragraph">
-              When I'm not coding, I like to draw digital art, play video games,
-              and spend time with my cat, Kohaku.
+              Beyond coding, I'm an enthusiastic gamer with a passion for
+              single-player games such as the Metal Gear Solid series. I'm also
+              a little bit of an artist, often found channeling artistic
+              expression into digital art with my XP-Pen display tablet and
+              Photoshop.
             </p>
           </div>
           <div className="technology-container">
+            <h3 style={{ marginBottom: "35px" }}>My Skills</h3>
             <div className="technology-grid-container">
               <div className="technology-item">
-                <SiReact className="icon" />
                 <p className="technology-text">React</p>
               </div>
               <div className="technology-item">
-                <SiJavascript className="icon" />
                 <p className="technology-text">JavaScript</p>
               </div>
               <div className="technology-item">
-                <SiHtml5 className="icon" />
+                <p className="technology-text">TypeScript</p>
+              </div>
+              <div className="technology-item">
                 <p className="technology-text">HTML</p>
               </div>
               <div className="technology-item">
-                <SiCss3 className="icon" />
                 <p className="technology-text">CSS</p>
               </div>
               <div className="technology-item">
-                <FaNodeJs className="icon" />
                 <p className="technology-text">Node.js</p>
               </div>
               <div className="technology-item">
-                <SiExpress className="icon" />
                 <p className="technology-text">Express.js</p>
               </div>
               <div className="technology-item">
-                <SiPostgresql className="icon" />
                 <p className="technology-text">PostgreSQL</p>
               </div>
               <div className="technology-item">
-                <SiPostgresql className="icon" />
                 <p className="technology-text">Python</p>
               </div>
               <div className="technology-item">
-                <FaGitAlt className="icon" />
                 <p className="technology-text">Git</p>
+              </div>
+              <div className="technology-item">
+                <p className="technology-text">GitHub</p>
               </div>
             </div>
           </div>

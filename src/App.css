@@ -1,69 +1,17 @@
 .App {
   box-sizing: border-box;
-  counter-reset: section-count;
-  font-family: "Rubik", sans-serif;
-}
-
-section {
-  padding: 0px 0px 100px 0px;
-}
-
-.icon {
-  height: 50px;
-  width: 50px;
-}
-
-.section-title,
-.contact-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  padding: 10px 0px 0px 0px;
-}
-
-.section-title::before,
-.contact-title::before {
-  counter-increment: section-count;
-  content: "0" counter(section-count) ".";
-  margin-right: 5px;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  height: 60px;
-  width: 60px;
-}
-
-.contact-title::after {
-  content: "";
-  display: block;
-  height: 10px;
-  width: 10px;
-}
-
-.bkg {
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(19, 5, 65, 1) 42%,
-    rgba(25, 133, 172, 1) 100%,
-    rgba(61, 11, 80, 1) 100%
-  );
+  font-family: "Roboto", sans-serif;
+  background-color: grey;
+  letter-spacing: 1.5px;
 }
 
 html,
 body,
 #root,
 .App {
-  height: 100%;
-  padding: 0;
   margin: 0;
-}
-
-html {
   padding: env(safe-area-inset);
+  height: 100%;
 }
 
 h1,
@@ -77,31 +25,40 @@ li {
   margin: 0;
 }
 
-/* Laptops */
-@media (max-width: 1024px) {
-  .section-title,
-  .contact-title {
-    font-size: 2rem;
-  }
+section {
 }
 
-/* Tablets */
-/* @media (max-width: 768px) {
+.icon {
+  height: 50px;
+  width: 50px;
+}
 
-  .icon {
-    height: 40px;
-    width: 40px;
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 45px 0px;
+}
+
+.bkg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(19, 5, 65, 1) 42%,
+    rgba(25, 133, 172, 1) 100%,
+    rgba(61, 11, 80, 1) 100%
+  );
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
   }
-} */
 
-/* 
-Desktops
-@media (max-width: 1200px) {
-
-} */
-
-@media only screen and (max-width: 960px) {
-
+  .project-main {
+    margin: 150px 0px;
+  }
 }
 
 /* Tablets */
@@ -114,23 +71,22 @@ Desktops
 
 /* Mobile devices */
 @media (max-width: 480px) {
-  .section-title::after {
-    content: "";
-    display: block;
-    height: 50px;
-    width: 50px;
-  }
-
   .icon {
     height: 30px;
     width: 30px;
   }
 
-  section {
-    padding: 0px 0px 70px 0px;
+  .project-main {
+    margin: 150px 0px 0px 0px;
   }
 
+  .section-title {
+    margin: 0px;
+  }
 
+  section {
+    padding: 0px;
+  }
 }
 
 /* Mobile devices */

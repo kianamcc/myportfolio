@@ -1,15 +1,33 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
 
 const Header = () => {
   return (
-    <header className="header" id="header">
+    <header className="header" id="Home">
       <section className="header-container">
         <h1 className="intro">Hi, I'm Kiana McCullough</h1>
-        <h3 className="headline">Web Developer & Web Enthusiast</h3>
+        <div className="headline">
+          <Typewriter
+            skipAddStyles={true}
+            options={{
+              strings: [
+                "Web Developer",
+                "Frontend Developer",
+                "Software Developer",
+              ],
+              autoStart: true,
+              loop: true,
+              pauseFor: 1000,
+              delay: 80,
+            }}
+          />
+        </div>
         <h4 className="intro-description">
-          I like creating things on the web, just like this website right here!
+          Welcome to my coding playground! I'm on a mission to blend creativity
+          with technology, crafting digital experiences that leave a lasting
+          impression.
         </h4>
         <Link
           to="contact"
@@ -19,7 +37,7 @@ const Header = () => {
           offset={-100}
           duration={500}
         >
-          Let's connect
+          Let's connect!
         </Link>
         <div className="header-links"></div>
       </section>

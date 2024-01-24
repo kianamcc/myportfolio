@@ -1,18 +1,19 @@
 .about {
-  margin: 0;
   width: 100%;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-container {
   margin: auto;
   width: 90%;
-  /* height: 100vh; */
 }
 
 .about-flex-container {
   display: flex;
-  align-items: center;
 }
 
 .about-text {
@@ -42,17 +43,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, auto));
   grid-gap: 20px;
-  justify-content: center;
 }
 
 .technology-item {
   border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 10px 4px;
+  padding: 10px;
 }
 
 .icon:hover {
@@ -61,12 +61,9 @@
 
 /* Laptops */
 @media (max-width: 1024px) {
-
-
 }
 
 @media only screen and (max-width: 960px) {
-  
 }
 
 /* Tablets */
@@ -81,13 +78,10 @@
   .section-paragraph {
     font-size: 1.1rem;
   }
-  
 }
 
 /* Mobile devices */
 @media only screen and (max-width: 640px) {
-
-  
 }
 
 @media only screen and (max-width: 480px) {
@@ -100,16 +94,15 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-
   }
   .technology-grid-container {
     gap: 10px;
-  } 
+  }
 
   .section-paragraph {
     font-size: 1rem;
   }
-}       
+}
 @media only screen and (max-width: 320px) {
   .about-text {
     padding: 0px 10px;

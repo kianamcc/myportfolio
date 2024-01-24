@@ -1,76 +1,159 @@
-import React from "react";
+// import React from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import resume from "../../assets/KianaMcCulloughResume.pdf";
 import logo from "../../assets/logo.png";
 
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+
 const Navbar = () => {
+  const pages = ["Home", "About", "Projects", "Contact"];
+
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <nav className="nav">
-      <div className="nav-container">
-        <div className="header-logo">
-          <img className="logo-img" src={logo} alt="" />
-        </div>
-        <ul className="nav-links">
-          <li className="nav-item">
-            <Link
-              to="header"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
+    <AppBar
+      position="fixed"
+      sx={{
+        backgroundColor: "rgba(0, 0, 0, 0.95)",
+      }}
+    >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
+            <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+              <img src={logo} alt="logo" class="logo-img" />
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+
+              display: { xs: "flex", md: "none" },
+            }}
+          >
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
             >
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+              MenuListProps={{
+                sx: {
+                  padding: "8px 50px",
+                  backgroundColor: "black",
+                  border: "2px solid #FFFF",
+                },
+              }}
             >
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              Projects
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <div className="nav-resume">
-              <a
-                className="resume-link"
-                href={resume}
-                target="_blank"
-                rel="noreferrer"
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link
+                      className="mobile-nav-link"
+                      to={page}
+                      spy={true}
+                      smooth={true}
+                      onClick={handleCloseNavMenu}
+                    >
+                      {page}
+                    </Link>
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+
+          <Box sx={{ display: { xs: "flex", md: "none" }, mr: 2, flexGrow: 1 }}>
+            <img src={logo} alt="logo" class="logo-img" />
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "flex-end",
+              display: { xs: "none", md: "flex" },
+              gap: "25px",
+            }}
+          >
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "#9b999a",
+                  display: "block",
+                  height: "100%",
+                  letterSpacing: "1.5px",
+                }}
               >
-                Resume
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                {page === "Projects" ? (
+                  <Link
+                    className="nav-link"
+                    to={page}
+                    spy={true}
+                    smooth={true}
+                    onClick={handleCloseNavMenu}
+                    offset={-200}
+                  >
+                    {page}
+                  </Link>
+                ) : (
+                  <Link
+                    className="nav-link"
+                    to={page}
+                    spy={true}
+                    smooth={true}
+                    onClick={handleCloseNavMenu}
+                  >
+                    {page}
+                  </Link>
+                )}
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 
