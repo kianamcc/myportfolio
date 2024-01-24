@@ -1,14 +1,5 @@
 import React from "react";
 import "./About.css";
-import {
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
-  SiReact,
-  SiPostgresql,
-  SiExpress,
-} from "react-icons/si";
-import { FaNodeJs, FaGitAlt } from "react-icons/fa";
 
 const About = () => {
   return (
