@@ -1,5 +1,6 @@
 .contact {
   color: white;
+  /* height: 100vh; */
 }
 
 .contact-container {
@@ -117,5 +118,13 @@
     width: 90%;
     font-size: 0.9rem;
   }
+}
 
+@media (min-width: 1024px) {
+  .contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
