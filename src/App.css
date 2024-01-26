@@ -21,13 +21,6 @@ section {
   padding: 10px 0px 0px 0px;
 }
 
-.section-title::before,
-.contact-title::before {
-  counter-increment: section-count;
-  content: "0" counter(section-count) ".";
-  margin-right: 5px;
-}
-
 .section-title::after {
   content: "";
   display: block;
@@ -101,7 +94,6 @@ Desktops
 } */
 
 @media only screen and (max-width: 960px) {
-
 }
 
 /* Tablets */
@@ -129,8 +121,6 @@ Desktops
   section {
     padding: 0px 0px 70px 0px;
   }
-
-
 }
 
 /* Mobile devices */

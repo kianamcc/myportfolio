@@ -1,12 +1,11 @@
-import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-// import MobileNav from "./components/mobilenav/MobileNav";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import projectData from "./projectData";
+import "./App.css";
 
 const App = () => {
   const arrowHandler = () => {
@@ -23,7 +22,6 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      {/* <MobileNav /> */}
       <div className="bkg">
         <Header />
         <About />
