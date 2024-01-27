@@ -44,7 +44,6 @@ const Navbar = () => {
           <Box
             sx={{
               flexGrow: 1,
-
               display: { xs: "flex", md: "none" },
             }}
           >
@@ -56,7 +55,7 @@ const Navbar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon fontSize="large" />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -102,7 +101,7 @@ const Navbar = () => {
                         className="mobile-nav-link"
                         to={page}
                         spy={true}
-                        offset={-56}
+                        offset={-60}
                         smooth={true}
                         onClick={handleCloseNavMenu}
                       >
@@ -154,7 +153,7 @@ const Navbar = () => {
                     className="nav-link"
                     to={page}
                     spy={true}
-                    offset={-58}
+                    offset={-60}
                     smooth={true}
                     onClick={handleCloseNavMenu}
                   >
