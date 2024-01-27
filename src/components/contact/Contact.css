@@ -1,6 +1,5 @@
 .contact {
   color: white;
-  /* height: 100vh; */
 }
 
 .contact-container {
@@ -19,7 +18,7 @@
 
 .contact-description {
   text-align: center;
-  padding: 0px 0px 10px 0px;
+  padding: 30px 0px 10px 0px;
   width: 50%;
   line-height: 2rem;
 }
@@ -76,7 +75,6 @@
   }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
   .contact-form {
     width: 60vw;
@@ -86,7 +84,6 @@
   }
 }
 
-/* Mobile devices */
 @media (max-width: 480px) {
   .contact-form {
     display: flex;

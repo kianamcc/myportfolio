@@ -25,14 +25,10 @@ const App = () => {
       <div className="bkg">
         <Header />
         <About />
-
         <section className="project-main" id="projects">
-          <h2 className="section-title" style={{ color: "white" }}>
-            Projects
-          </h2>
+          <h2 className="section-title">Projects</h2>
           {projects}
         </section>
-
         <Contact />
         <Footer arrowHandler={arrowHandler} />
       </div>

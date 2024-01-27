@@ -2,17 +2,17 @@
   margin: 0;
   width: 100%;
   color: white;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .about-container {
   margin: auto;
-  width: 90%;
 }
 
 .about-flex-container {
   display: flex;
   align-items: center;
+  padding: 30px 30px 0px 30px;
 }
 
 .about-text {
@@ -59,14 +59,6 @@
   color: #56cfe1;
 }
 
-/* Laptops */
-@media (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 960px) {
-}
-
-/* Tablets */
 @media only screen and (max-width: 768px) {
   .about-flex-container {
     flex-direction: column;
@@ -80,16 +72,7 @@
   }
 }
 
-/* Mobile devices */
-@media only screen and (max-width: 640px) {
-}
-
 @media only screen and (max-width: 480px) {
-  .about-text {
-    padding: 30px;
-    line-height: 1.5rem;
-  }
-
   .technology-grid-container {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -126,5 +109,9 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+  }
+  .about-text {
+    padding: 30px;
+    line-height: 1.5rem;
   }
 }

@@ -21,22 +21,9 @@
 .projects-flex-container {
   display: flex;
   gap: 35px;
-  /* padding: 0px 100px 50px 100px; */
   flex-wrap: wrap;
   animation: projectAnimation 500ms ease-in;
 }
-
-/* @keyframes projectAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100;
-  }
-} */
 
 .projects-container-left {
   flex: 1;
@@ -74,7 +61,6 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  
 }
 
 .technology-item {
@@ -93,8 +79,34 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Laptops */
-@media (max-width: 1024px) {
+@media (min-width: 321px) {
+  .projects-container {
+    padding: 30px 50px 50px 50px;
+  }
+
+  .projects-container {
+    padding: 30px 30px 0px 30px;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .projects-flex-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-description {
+    font-size: 1.2rem;
+  }
+  .projects-container {
+    padding: 30px 50px 50px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
   .project-title {
     font-size: 1.5rem;
   }
@@ -102,55 +114,14 @@
   .project-description {
     font-size: 1rem;
   }
-  .projects-container {
-    padding: 0px 50px 50px 50px;
+
+  .projects-flex-container {
+    flex-direction: initial;
   }
 
   .project-github,
   .project-code {
     height: 40px;
     width: 40px;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .projects-container {
-    padding: 0px 10px;
-  }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-  .project-description {
-    font-size: 1rem;
-  }
-  .projects-container {
-    padding: 0px 20px;
-  }
-  .projects-flex-container {
-    flex-direction: column-reverse;
-  }
-}
-
-/* Mobile devices */
-@media (max-width: 480px) {
-  .project-description {
-    font-size: 0.9rem;
-  }
-  .projects-container {
-    padding: 0px 50px 50px 50px;
-  }
-
-  .projects-flex-container {
-    padding: 0px;
-  }
-}
-
-@media (max-width: 320px) {
-  .project-description {
-    font-size: 0.9rem;
-  }
-  .projects-container {
-    padding: 0px 10px 10px 10px;
   }
 }

@@ -93,7 +93,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         onClick={handleCloseNavMenu}
-                        offset={-180}
+                        offset={-100}
                       >
                         {page}
                       </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
                         className="mobile-nav-link"
                         to={page}
                         spy={true}
-                        offset={-80}
+                        offset={-56}
                         smooth={true}
                         onClick={handleCloseNavMenu}
                       >
