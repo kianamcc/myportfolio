@@ -4,7 +4,6 @@ import {
   AiOutlineUpCircle,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { IoMail } from "react-icons/io5";
 
 import "./Footer.css";
 
