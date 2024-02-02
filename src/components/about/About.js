@@ -1,5 +1,6 @@
 import React from "react";
 
+import aboutImg from "../../assets/profile.jpg";
 import "./About.css";
 
 const About = () => {
@@ -8,56 +9,31 @@ const About = () => {
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <div className="about-flex-container">
-          <div className="about-text">
-            <p className="section-paragraph">
-              Hi there! I'm Kiana McCullough, a Web Developer with a focus on
-              front-end development based in California.
-            </p>
-            <p className="section-paragraph">
-              I firmly believe that the path to success lies in continual
-              learning. I'm dedicated to refining my skills and exploring new
-              horizons in both web and software development.
-            </p>
-            <p className="section-paragraph">
-              Beyond coding, I'm an enthusiastic gamer with a passion for
-              single-player games such as the Metal Gear Solid series. I'm also
-              a little bit of an artist, often found channeling artistic
-              expression into digital art with my XP-Pen display tablet and
-              Photoshop.
-            </p>
+          <div className="about-left">
+            <img src={aboutImg} className="about-img" alt="about-img" />
           </div>
-          <div className="technology-container">
-            <div className="technology-grid-container">
-              <div className="technology-item">
-                <p className="technology-text">React</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">JavaScript</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">TypeScript</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">HTML</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">CSS</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">Node.js</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">Express.js</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">PostgreSQL</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">Python</p>
-              </div>
-              <div className="technology-item">
-                <p className="technology-text">Git</p>
-              </div>
+          <div className="about-text">
+            <div className="about-text">
+              <p className="section-paragraph">
+                Hi there! 👋 I'm{" "}
+                <span className="text-emphasis">Kiana McCullough</span>, a web
+                developer based in California. I graduated with a bachelor's
+                degree in Computer Science from University of California,
+                Riverside.
+              </p>
+              <br />
+              <p className="section-paragraph">
+                I firmly believe that the path to success lies in continual
+                learning. 📚 I'm dedicated to refining my skills and exploring
+                new horizons in the realm of web development.
+              </p>
+              <br />
+              <p className="section-paragraph">
+                When I'm not coding, you can catch me channeling artistic
+                expression into digital art 🎨, playing video games (I'm a big
+                fan of the Metal Gear Solid Series) 🎮, or hanging out with my
+                cat, Kohaku. 🐈‍⬛
+              </p>
             </div>
           </div>
         </div>

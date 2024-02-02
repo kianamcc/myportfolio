@@ -1,5 +1,4 @@
 .contact {
-  color: white;
 }
 
 .contact-container {
@@ -16,11 +15,21 @@
   width: 45vw;
 }
 
+.contact-social-link {
+  text-decoration: none;
+  color: #5aa9e6;
+  transition: all 250ms linear;
+}
+
+.contact-social-link:hover {
+  color: #a5d0f1;
+  transition: all 250ms linear;
+}
+
 .contact-description {
   text-align: center;
-  padding: 30px 0px 10px 0px;
-  width: 50%;
-  line-height: 2rem;
+  margin-bottom: 10px;
+  width: 80%;
 }
 
 .name-input-box,
@@ -32,20 +41,21 @@
 }
 
 .submit-btn {
-  width: fit-content;
-  border: 2px solid #56cfe1;
+  margin-top: 10px;
   color: #ffff;
-  border-radius: 2px;
-  padding: 10px;
-  background: none;
-  cursor: pointer;
   margin-left: auto;
   font-size: 1.2rem;
-  transition: all 300ms linear;
+  border-radius: 8px;
+  background-color: #79addc;
+  border: none;
+  text-align: center;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 250ms linear;
 }
 
 .submit-btn:hover {
-  background-color: #56cfe1;
+  background-color: #94bde3;
 }
 
 .message-input-box {
@@ -99,7 +109,6 @@
 
   .contact-description {
     width: 90%;
-    padding-bottom: 40px;
   }
 }
 
@@ -119,7 +128,6 @@
 
 @media (min-width: 1024px) {
   .contact {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

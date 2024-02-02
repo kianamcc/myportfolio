@@ -31,7 +31,7 @@ const Navbar = () => {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: "rgba(0, 0, 0, 0.95)",
+        backgroundColor: "#c6def1",
       }}
     >
       <Container maxWidth="xl">
@@ -53,7 +53,7 @@ const Navbar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#696969"
             >
               <MenuIcon fontSize="large" />
             </IconButton>
@@ -77,7 +77,7 @@ const Navbar = () => {
               MenuListProps={{
                 sx: {
                   padding: "8px 50px",
-                  backgroundColor: "black",
+                  backgroundColor: "#c6def1",
                   border: "2px solid #FFFF",
                 },
               }}
@@ -92,7 +92,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         onClick={handleCloseNavMenu}
-                        offset={-100}
+                        offset={-120}
                       >
                         {page}
                       </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                         className="mobile-nav-link"
                         to={page}
                         spy={true}
-                        offset={-60}
+                        offset={-69}
                         smooth={true}
                         onClick={handleCloseNavMenu}
                       >
@@ -131,10 +131,11 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "#9b999a",
+                  color: "#696969",
                   display: "block",
                   height: "100%",
                   letterSpacing: "1.5px",
+                  fontFamily: "Rubik, sans-serif",
                 }}
               >
                 {page === "Projects" ? (
@@ -144,7 +145,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     onClick={handleCloseNavMenu}
-                    offset={-220}
+                    offset={-150}
                   >
                     {page}
                   </Link>
@@ -153,7 +154,7 @@ const Navbar = () => {
                     className="nav-link"
                     to={page}
                     spy={true}
-                    offset={-60}
+                    offset={-100}
                     smooth={true}
                     onClick={handleCloseNavMenu}
                   >

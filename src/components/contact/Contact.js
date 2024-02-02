@@ -29,12 +29,34 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact" id="Contact">
+    <section className="contact" id="Contact" style={{ marginBottom: "40px" }}>
       <div className="contact-container">
         <h2 className="section-title">Contact</h2>
-        <p className="contact-description">
-          Feel free to reach out to me by submitting the form below and I will
-          get back to you as soon as possible!
+
+        <p className="contact-description section-paragraph">
+          Connect with me via{" "}
+          <a
+            href="https://github.com/kianamcc"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-social-link"
+          >
+            GitHub
+          </a>
+          ,{" "}
+          <a
+            href="https://www.linkedin.com/in/kiana-mccullough/"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-social-link"
+          >
+            LinkedIn
+          </a>
+          ,{" "}
+          <a href="mailto:kianamccu@gmail.com" className="contact-social-link">
+            email
+          </a>
+          , or use the contact form below!
         </p>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <label htmlFor="name">Name</label>

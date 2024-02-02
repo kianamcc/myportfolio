@@ -14,7 +14,7 @@
 }
 
 .mobile-nav-link {
-  color: rgb(155, 153, 154);
+  color: #696969;
 }
 
 .mobile-nav-link.active {
@@ -38,8 +38,8 @@
 }
 
 .logo-img {
-  width: 60px;
-  height: 40px;
+  width: 35px;
+  height: 25px;
 }
 
 .nav-links {

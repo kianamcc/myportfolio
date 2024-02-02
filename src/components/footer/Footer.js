@@ -26,11 +26,10 @@ const Footer = (props) => {
           <a href="http://github.com/kianamcc" target="_blank" rel="noreferrer">
             <AiFillGithub size={55} className="github-link header-link-item" />
           </a>
-          <a href="mailto:kianamccu@gmail.com" target="_blank" rel="noreferrer">
-            <IoMail size={55} className="github-link header-link-item" />
-          </a>
         </div>
-        <div className="footnote">Kiana McCullough ©2024</div>
+        <div className="footnote">
+          Designed and developed by Kiana McCullough 2024
+        </div>
         <div className="arrow-container" onClick={props.arrowHandler}>
           <AiOutlineUpCircle size={50} className="arrow" />
         </div>

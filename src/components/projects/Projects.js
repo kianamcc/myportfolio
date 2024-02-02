@@ -22,7 +22,7 @@ const Projects = (props) => {
           <div className="projects-flex-container">
             <div className="projects-container-left">
               <h3 className="project-title">{props.project.projectName}</h3>
-              <p className="project-description">
+              <p className="project-description section-paragraph">
                 {props.project.projectDescription}
               </p>
 

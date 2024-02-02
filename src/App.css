@@ -1,11 +1,24 @@
 .App {
   box-sizing: border-box;
-  counter-reset: section-count;
+  font-family: "Rubik", sans-serif;
+  line-height: 2rem;
+}
+
+input {
   font-family: "Rubik", sans-serif;
 }
 
 section {
-  padding: 0px 0px 100px 0px;
+  margin-bottom: 150px;
+}
+
+.section-paragraph {
+  color: #696969;
+}
+
+.text-emphasis {
+  font-weight: 700;
+  color: #5aa9e6;
 }
 
 .icon {
@@ -17,17 +30,27 @@ section {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
-  color: #ffff;
+  margin-bottom: 20px;
 }
 
 .bkg {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 64%,
+    rgba(198, 222, 241, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 64%,
+    rgba(198, 222, 241, 1) 100%
+  );
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(19, 5, 65, 1) 42%,
-    rgba(25, 133, 172, 1) 100%,
-    rgba(61, 11, 80, 1) 100%
+    rgba(255, 255, 255, 1) 64%,
+    rgba(198, 222, 241, 1) 100%
   );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c6def1",GradientType=1);
 }
 
 html,
@@ -54,25 +77,7 @@ li {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .icon {
-    height: 30px;
-    width: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .icon {
-    height: 30px;
-    width: 30px;
-  }
-
-  section {
-    padding: 0px 0px 70px 0px;
-  }
-}
-
-@media (min-width: 321px) {
+@media (min-width: 320px) {
   .section-title {
     font-size: 2rem;
   }
