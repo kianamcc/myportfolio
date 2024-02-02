@@ -1,8 +1,5 @@
 .about {
-  margin: 0;
   width: 100%;
-  color: white;
-  margin-bottom: 70px;
 }
 
 .about-container {
@@ -12,106 +9,53 @@
 .about-flex-container {
   display: flex;
   align-items: center;
-  padding: 30px 30px 0px 30px;
+  gap: 20px;
+  padding: 0px 35px;
 }
 
 .about-text {
-  flex: 1;
-  padding: 0px 10px;
-  line-height: 2rem;
+  flex: 0.7;
+}
+
+.about-left {
+  flex: 0.3;
+  background-color: #c6def1;
+  border-radius: 16px;
+}
+
+.about-img {
+  width: 95%;
+  height: 95%;
+  border-radius: 16px;
+  border: 6px solid #79addc;
 }
 
 .section-paragraph {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.section-paragraph::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
-.technology-container {
-  flex: 1;
-  padding: 10px;
-}
-
-.technology-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, auto));
-  grid-gap: 20px;
-  justify-content: center;
-}
-
-.technology-item {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 4px;
 }
 
 .icon:hover {
   color: #56cfe1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) {
   .about-flex-container {
     flex-direction: column;
   }
-  .technology-grid-container {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .section-paragraph {
-    font-size: 1.1rem;
-  }
 }
 
-@media only screen and (max-width: 480px) {
-  .technology-grid-container {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-  .technology-grid-container {
-    gap: 10px;
-  }
-
-  .section-paragraph {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .about-text {
-    padding: 0px 10px;
-  }
-
-  .technology-grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
-    grid-gap: 20px;
-  }
-  .technology-container {
-    width: 70%;
-  }
-
-  .technology-text {
-    font-size: 0.5rem;
+@media only screen and (min-width: 768px) {
+  .about-flex-container {
+    flex-direction: initial;
   }
 }
 
 @media (min-width: 1024px) {
   .about {
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
   .about-text {
     padding: 30px;
-    line-height: 1.5rem;
   }
 }
