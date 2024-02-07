@@ -5,10 +5,10 @@ import janeimg from "./assets/jane.png";
 const projectData = [
   {
     id: 0,
-    projectName: "Jane Component Library",
+    projectName: "React Component Library",
     src: janeimg,
     projectDescription:
-      "A React-based reusable component library integrated with Storybook to maintain design consistency across our company website. By leveraging robust third-party libraries, we implemented these components to streamline the development process while ensuring a cohesive and standardized design throughout the website.",
+      "A React-based reusable component library integrated with Storybook.",
     projectTechnologies: [
       "React",
       "TypeScript",
