@@ -7,8 +7,8 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header" id="Home">
-      <section className="header-container">
+    <section className="header" id="Home">
+      <div className="header-container">
         <div className="header-left">
           <h1 className="intro">Hi, I'm Kiana McCullough.</h1>
           <p className="intro-description section-paragraph">
@@ -30,8 +30,8 @@ const Header = () => {
         <div className="header-right">
           <img src={headerImg} alt="header-img" className="header-img" />
         </div>
-      </section>
-    </header>
+      </div>
+    </section>
   );
 };
 

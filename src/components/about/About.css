@@ -42,9 +42,36 @@
   .about-flex-container {
     flex-direction: column;
   }
+
+  .about-left {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .about-img {
+    width: 55%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .about-img {
+    width: 95%;
+    height: 95%;
+  }
+
+  .about-text {
+    flex: 0.6;
+  }
+
+  .about-left {
+    flex: 0.4;
+  }
+
   .about-flex-container {
     flex-direction: initial;
   }
@@ -55,7 +82,13 @@
     display: flex;
     justify-content: center;
   }
+
+  .about-left {
+    flex: initial;
+  }
+
   .about-text {
+    flex: initial;
     padding: 30px;
   }
 }

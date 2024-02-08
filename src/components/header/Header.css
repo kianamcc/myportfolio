@@ -1,6 +1,6 @@
 .header {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   width: 100%;
 }
 
@@ -172,7 +172,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 844px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 915px) and (orientation: landscape) {
   .header-container {
     padding-top: 64px;
   }
