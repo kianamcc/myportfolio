@@ -102,14 +102,24 @@
 
   .connect-btn {
     align-self: center;
+    padding: 10px;
   }
 
   .header-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .header-img {
+    max-width: 85px;
+    height: 85px;
+  }
+
+  .header-left {
+    flex: 0.4;
   }
 
   .header-right {
-    display: none;
+    flex: 0;
   }
 }
 
@@ -117,6 +127,10 @@
   .header-right {
     display: flex;
     align-items: flex-start;
+  }
+
+  .header-right {
+    flex: 0.4;
   }
 
   .header-img {
@@ -145,6 +159,16 @@
     margin-top: 10px;
     font-size: 1.2rem;
     align-self: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-left {
+    flex: 0.6;
+  }
+
+  .header-right {
+    flex: 0.4;
   }
 }
 
