@@ -1,9 +1,15 @@
 import React from "react";
 
-import { SiTypescript, SiJavascript, SiPostgresql } from "react-icons/si";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPostgresql,
+  SiMongodb,
+} from "react-icons/si";
 import {
   FaHtml5,
   FaCss3Alt,
+  FaSass,
   FaReact,
   FaGithub,
   FaGitAlt,
@@ -38,20 +44,25 @@ const Skills = () => {
             <p className="skill-text">CSS</p>
           </div>
           <div className="skill-item">
+            <FaSass className="skill-icon" />
+            <p className="skill-text">SaSS</p>
+          </div>
+          <div className="skill-item">
             <FaReact className="skill-icon" />
             <p className="skill-text">React.js</p>
           </div>
-
           <div className="skill-item">
             <IoLogoNodejs className="skill-icon" />
             <p className="skill-text">Node.js</p>
           </div>
-
           <div className="skill-item">
             <SiPostgresql className="skill-icon" />
             <p className="skill-text">PostgreSQL</p>
           </div>
-
+          <div className="skill-item">
+            <SiMongodb className="skill-icon" />
+            <p className="skill-text">MongoDB</p>
+          </div>
           <div className="skill-item">
             <FaGitAlt className="skill-icon" />
             <p className="skill-text">Git</p>

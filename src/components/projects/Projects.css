@@ -62,7 +62,8 @@
 }
 
 .technology-item {
-  background-color: #c6def1;
+  background-color: #79addc;
+  color: white;
   border-radius: 50px;
   padding: 0px 10px;
 }

@@ -1,10 +1,38 @@
 import catfinderimg from "./assets/catfinder.png";
-import u4eaimg from "./assets/u4ea.png";
 import janeimg from "./assets/jane.png";
+import dreamscapeimg from "./assets/dreamscape.png";
 
 const projectData = [
   {
     id: 0,
+    projectName: "Dreamscape",
+    src: dreamscapeimg,
+    projectDescription:
+      "Dreamscape is a full-stack application designed with an easy-to-use interface and a secure user authentication system. It empowers users to immerse themselves in a world of dream journaling and self-discovery, providing a platform for personal reflection and growth.",
+    projectTechnologies: [
+      "React",
+      "TypeScript",
+      "SCSS",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Jest",
+      "React Testing Library",
+    ],
+    githubLink: "http://github.com/kianamcc/dreamscape",
+  },
+  {
+    id: 1,
+    projectName: "CatFinder",
+    src: catfinderimg,
+    projectDescription:
+      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
+    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
+    githubLink: "http://github.com/kianamcc/catfinder",
+    liveDemoLink: "http://catfinder-adopt.netlify.app/",
+  },
+  {
+    id: 2,
     projectName: "React Component Library",
     src: janeimg,
     projectDescription:
@@ -20,34 +48,6 @@ const projectData = [
     ],
     liveDemoLink:
       "https://component-library.janedev.com/?path=/docs/components-badge--docs",
-  },
-  {
-    id: 2,
-    projectName: "CatFinder",
-    src: catfinderimg,
-    projectDescription:
-      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
-    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
-    githubLink: "http://github.com/kianamcc/catfinder",
-    liveDemoLink: "http://catfinder-adopt.netlify.app/",
-  },
-  {
-    id: 1,
-    projectName: "U4Ea",
-    src: u4eaimg,
-    projectDescription:
-      "A website made and designed to introduce and promote the mobile application: U4Ea. Provides an interactive interface that introduces users to the healing power of sound through binaural beats.",
-    projectTechnologies: [
-      "React",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-    ],
-    githubLink: "http://github.com/U4EaData/Landing-Page",
-    liveDemoLink: "http://u4ea.onrender.com/",
   },
 ];
 

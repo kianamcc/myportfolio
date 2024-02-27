@@ -40,14 +40,16 @@ const Projects = (props) => {
                     <AiFillGithub size={40} className="project-github" />
                   </a>
                 )}
-                <a
-                  href={props.project.liveDemoLink}
-                  className="githubLink"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <IoMdOpen size={40} className="project-code" />
-                </a>
+                {props.project.liveDemoLink && (
+                  <a
+                    href={props.project.liveDemoLink}
+                    className="githubLink"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <IoMdOpen size={40} className="project-code" />
+                  </a>
+                )}
               </div>
             </div>
             <div className="projects-container-right">
