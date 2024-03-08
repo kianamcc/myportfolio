@@ -1,6 +1,4 @@
 .header {
-  /* margin: 0;
-  padding: 0; */
   width: 100%;
 }
 
@@ -39,8 +37,21 @@
   border-radius: 50%;
 }
 
-.connect-btn {
+.resume-download-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 250ms linear;
+  color: #696969;
+  align-self: center;
   width: fit-content;
+}
+
+.resume-download-link:hover {
+  color: #bebebe;
+  transition: all 250ms linear;
+}
+
+.connect-btn {
   font-size: 1.2rem;
   border-radius: 8px;
   background-color: #aed0eb;
@@ -98,6 +109,10 @@
 @media only screen and (min-width: 320px) {
   .intro {
     font-size: 2.5rem;
+  }
+
+  .resume-download-link {
+    align-self: center;
   }
 
   .connect-btn {
@@ -158,6 +173,10 @@
     padding: 15px;
     margin-top: 10px;
     font-size: 1.2rem;
+    align-self: initial;
+  }
+
+  .resume-download-link {
     align-self: initial;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import headerImg from "../../assets/avatar.png";
+import resumePdf from "../../assets/Kiana_McCullough_Resume.pdf";
 
 import "./Header.css";
 
@@ -26,6 +27,14 @@ const Header = () => {
           >
             <span className="connect-btn-arrow">Let's connect! </span>
           </Link>
+          <a
+            href={resumePdf}
+            className="resume-download-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download my resume!
+          </a>
         </div>
         <div className="header-right">
           <img src={headerImg} alt="header-img" className="header-img" />
