@@ -5,6 +5,16 @@ import dreamscapeimg from "./assets/dreamscape.png";
 const projectData = [
   {
     id: 0,
+    projectName: "CatFinder",
+    src: catfinderimg,
+    projectDescription:
+      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
+    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
+    githubLink: "http://github.com/kianamcc/catfinder",
+    liveDemoLink: "http://catfinder-adopt.netlify.app/",
+  },
+  {
+    id: 1,
     projectName: "Dreamscape",
     src: dreamscapeimg,
     projectDescription:
@@ -22,16 +32,6 @@ const projectData = [
     githubLink: "http://github.com/kianamcc/dreamscape",
   },
   {
-    id: 1,
-    projectName: "CatFinder",
-    src: catfinderimg,
-    projectDescription:
-      "CatFinder is a web application that gives users access to the cats from the PetFinder database in shelters ready for adoption, CatFinder provides an easy user interface for adoption seekers through the use of local storage.",
-    projectTechnologies: ["React", "JavaScript", "HTML", "CSS"],
-    githubLink: "http://github.com/kianamcc/catfinder",
-    liveDemoLink: "http://catfinder-adopt.netlify.app/",
-  },
-  {
     id: 2,
     projectName: "React Component Library",
     src: janeimg,
@@ -46,8 +46,6 @@ const projectData = [
       "Styled Components",
       "AWS Amplify",
     ],
-    liveDemoLink:
-      "https://component-library.janedev.com/?path=/docs/components-badge--docs",
   },
 ];
 
