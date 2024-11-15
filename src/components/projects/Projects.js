@@ -17,7 +17,7 @@ const Projects = (props) => {
   );
   return (
     <section className="projects" id="Projects">
-      <Fade duration={2000}>
+      <Fade duration={2000} triggerOnce={true}>
         <div className="projects-container">
           <div className="projects-flex-container">
             <div className="projects-container-left">
